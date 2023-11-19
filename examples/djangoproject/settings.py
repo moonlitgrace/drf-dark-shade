@@ -42,6 +42,13 @@ INSTALLED_APPS = [
     'modern_drf_dark',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+        'modern_drf_dark.renderers.DarkHorizonBrowsableAPIRenderer',
+    )
+}
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
