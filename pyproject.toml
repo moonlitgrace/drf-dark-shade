@@ -1,9 +1,8 @@
 [tool.poetry]
 name = "modern-drf-dark"
 version = "0.1.0"
-description = "A dark theme for django rest framework browsable api"
+description = ""
 authors = ["tokitouq <tokitousan2005@gmail.com>"]
-license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
