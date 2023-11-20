@@ -1,12 +1,13 @@
 [tool.poetry]
-name = "modern-drf-dark"
+name = "drf-dark-shade"
 version = "0.1.0"
-description = ""
+description = "A dark theme for django rest framework browsable api"
 authors = ["tokitouq <tokitousan2005@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+djangorestframework = "^3.14.0"
 
 
 [build-system]
