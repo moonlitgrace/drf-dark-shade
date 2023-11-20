@@ -1,6 +1,6 @@
 :root {
   --primary-dark: #040D12;
-  --primary-light: #93B1A6;
+  --primary-light: #C3D9CE;
   --secondary-dark: #183D3D;
   --secondary-light: #5C8374;
   --secondary-dark-opacity: #082323;
@@ -25,16 +25,16 @@ h1 {
 
 h1, h2, h3, h4, h5, label, b {
   font-family: inherit;
-  color: #1aa57e;
+  color: var(--primary-light);
 }
 
 code, kbd, pre, samp {
   font-family: monospace;
-  font-size: 12px;
 }
 
 .prettyprint {
-  background-color: #000;
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
 }
 
 .navbar {
@@ -47,7 +47,7 @@ code, kbd, pre, samp {
 }
 
 .breadcrumb {
-  background-color: var(--secondary-dark-opacity) !important;
+  background-color: var(--secondary-dark-opacity);
   font-weight: 500;
 }
 
@@ -92,21 +92,8 @@ code, kbd, pre, samp {
   color: #2ABAD0;
 }
 
-.breadcrumb {
-  background-color: #000;
-}
-
-.breadcrumb > li + li:before {
-  color: #ccc;
-}
-
-.breadcrumb li.active a {
-  color: #2ABAD0;
-}
-
 .pln {
-  font-size: 15px;
-  color: #1aa57e;
+  color: var(--primary-light);
 }
 
 .kwd {
@@ -114,13 +101,13 @@ code, kbd, pre, samp {
 }
 
 .str, .atv {
-  color: #7b62b6;
+  color: var(--primary-light);
 }
 
 .pun {
-  color: #1aa57e;
+  color: var(--secondary-light);
 }
 
 .lit {
-  color: #2ABAD0;
+  color: var(--primary-light);
 }
