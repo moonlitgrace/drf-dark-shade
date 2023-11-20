@@ -28,6 +28,8 @@ REST_FRAMEWORK = {
     )
 }
 
+# rest_framework/img/grid.png
+
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware', #
     'django.contrib.auth.middleware.AuthenticationMiddleware', #

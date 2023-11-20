@@ -11,6 +11,14 @@ body {
   font-family: sans-serif;
 }
 
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("/static/rest_framework/img/grid.png") repeat-x;
+  filter: invert(100%);
+}
+
 h1 {
   font-weight: bold;
 }
@@ -57,9 +65,9 @@ code, kbd, pre, samp {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-  color: var(--primary-light);
+.btn-primary.active
+{
+  color: var(--primary-light) !important;
   background-color: var(--secondary-dark-opacity) !important;
 }
 
