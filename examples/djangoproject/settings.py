@@ -9,7 +9,6 @@ WSGI_APPLICATION = 'djangoproject.wsgi.application'
 STATIC_URL = 'static/'
 ROOT_URLCONF = 'djangoproject.urls'
 
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -19,13 +18,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party
     'rest_framework',
-    'modern_drf_dark',
+    'drf_dark_shade',
 ]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
-        'modern_drf_dark.renderers.DarkHorizonBrowsableAPIRenderer',
+        'drf_dark_shade.renderers.DarkHorizonBrowsableAPIRenderer',
     )
 }
 
