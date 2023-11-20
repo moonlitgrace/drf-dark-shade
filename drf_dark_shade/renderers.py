@@ -1,4 +1,4 @@
 from rest_framework.renderers import BrowsableAPIRenderer
 
-class DarkHorizonBrowsableAPIRenderer(BrowsableAPIRenderer):
-	template = "dark-horizon.html"
+class DeepForestBrowsableAPIRenderer(BrowsableAPIRenderer):
+	template = "deep-forest.html"

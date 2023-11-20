@@ -1,0 +1,145 @@
+:root {
+  --primary-dark: #040D12;
+  --primary-light: #C3D9CE;
+  --secondary-dark: #183D3D;
+  --secondary-light: #5C8374;
+  --secondary-dark-opacity: #082323;
+}
+
+body {
+  background-color: var(--primary-dark);
+  font-family: sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: url("/static/rest_framework/img/grid.png") repeat-x;
+  filter: invert(100%);
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, label, b {
+  font-family: inherit;
+  color: var(--primary-light);
+}
+
+code, kbd, pre, samp {
+  font-family: monospace;
+}
+
+.prettyprint {
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
+}
+
+.navbar {
+  border-top: 3px solid var(--primary-light);
+  background-color: var(--secondary-dark);
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: var(--primary-light);
+}
+
+.breadcrumb {
+  background-color: var(--secondary-dark-opacity);
+  font-weight: 500;
+}
+
+.breadcrumb a {
+  color: var(--primary-light) !important;
+}
+
+.btn-primary {
+  color: var(--primary-light);
+  font-weight: bold;
+  background-color: var(--secondary-dark);
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active
+{
+  color: var(--primary-light) !important;
+  background-color: var(--secondary-dark) !important;
+}
+
+.dropdown-menu {
+  background-color: var(--secondary-dark-opacity);
+}
+
+.dropdown-menu li a {
+  color: var(--primary-light) !important;
+}
+
+.dropdown-menu li a:hover {
+  background-color: var(--secondary-dark);
+}
+
+.well {
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
+  padding: 20px 10px 10px 10px;
+}
+
+.form-control {
+  background-color: var(--secondary-dark);
+  border: none;
+  box-shadow: none !important;
+  color: var(--primary-light);
+}
+
+.form-group.has-error label {
+  color: var(--primary-light);
+}
+
+.help-block {
+  color: var(--primary-light) !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.nav-tabs > li > a, .nav-tabs > li a {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a {
+  color: var(--primary-light);
+  box-sizing: border-box;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: var(--primary-light) !important;
+  cursor: default;
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
+  border-bottom-color: transparent;
+}
+
+.pln {
+  color: var(--primary-light);
+}
+
+.str, .atv {
+  color: var(--primary-light);
+}
+
+.pun {
+  color: var(--secondary-light);
+}
+
+.lit {
+  color: var(--primary-light);
+}
