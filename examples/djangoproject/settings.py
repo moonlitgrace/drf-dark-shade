@@ -24,7 +24,7 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
         'rest_framework.renderers.JSONRenderer',
-        'drf_dark_shade.renderers.DarkHorizonBrowsableAPIRenderer',
+        'drf_dark_shade.renderers.DeepForestBrowsableAPIRenderer',
     )
 }
 

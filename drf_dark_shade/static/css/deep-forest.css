@@ -1,10 +1,18 @@
+root {
+  --dark-1: #d9d2e8;
+  --dark-2: #b4a7d6;
+  --dark-3: #8e7cc3;
+  --dark-4: #674ea7;
+  --dark-5: #351c75;
+}
+
 body {
-  background-color: #222;
-  font-family: monospace;
+  background-color: #040D12;
+  font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5, label, b {
-  font-family: monospace;
+  font-family: inherit;
   color: #1aa57e;
 }
 
