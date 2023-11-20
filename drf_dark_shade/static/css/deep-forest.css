@@ -13,7 +13,7 @@ body {
 
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0;
   background: url("/static/rest_framework/img/grid.png") repeat-x;
   filter: invert(100%);
