@@ -68,7 +68,7 @@ code, kbd, pre, samp {
 .btn-primary.active
 {
   color: var(--primary-light) !important;
-  background-color: var(--secondary-dark-opacity) !important;
+  background-color: var(--secondary-dark) !important;
 }
 
 .dropdown-menu {
@@ -84,20 +84,52 @@ code, kbd, pre, samp {
 }
 
 .well {
-  background-color: #000;
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
+  padding: 20px 10px 10px 10px;
 }
 
 .form-control {
-  background-color: #2c2c2c;
-  color: #2ABAD0;
+  background-color: var(--secondary-dark);
+  border: none;
+  box-shadow: none !important;
+  color: var(--primary-light);
+}
+
+.form-group.has-error label {
+  color: var(--primary-light);
+}
+
+.help-block {
+  color: var(--primary-light) !important;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.nav-tabs > li > a, .nav-tabs > li a {
+  padding: 10px;
+  font-weight: 500;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a {
+  color: var(--primary-light);
+  box-sizing: border-box;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: var(--primary-light) !important;
+  cursor: default;
+  background-color: var(--secondary-dark-opacity);
+  border: 1px solid var(--secondary-dark);
+  border-bottom-color: transparent;
 }
 
 .pln {
   color: var(--primary-light);
-}
-
-.kwd {
-  color: #A7194E;
 }
 
 .str, .atv {
