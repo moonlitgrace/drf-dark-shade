@@ -3,7 +3,7 @@
   --primary-light: #C3D9CE;
   --secondary-dark: #183D3D;
   --secondary-light: #5C8374;
-  --secondary-dark-opacity: #082323;
+  --secondary-dark-dark: #082323;
 }
 
 body {
@@ -33,7 +33,7 @@ code, kbd, pre, samp {
 }
 
 .prettyprint {
-  background-color: var(--secondary-dark-opacity);
+  background-color: var(--secondary-dark-dark);
   border: 1px solid var(--secondary-dark);
 }
 
@@ -42,12 +42,12 @@ code, kbd, pre, samp {
   background-color: var(--secondary-dark);
 }
 
-.navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand {
   color: var(--primary-light);
 }
 
 .breadcrumb {
-  background-color: var(--secondary-dark-opacity);
+  background-color: var(--secondary-dark-dark);
   font-weight: 500;
 }
 
@@ -72,7 +72,7 @@ code, kbd, pre, samp {
 }
 
 .dropdown-menu {
-  background-color: var(--secondary-dark-opacity);
+  background-color: var(--secondary-dark-dark);
 }
 
 .dropdown-menu li a {
@@ -84,7 +84,7 @@ code, kbd, pre, samp {
 }
 
 .well {
-  background-color: var(--secondary-dark-opacity);
+  background-color: var(--secondary-dark-dark);
   border: 1px solid var(--secondary-dark);
   padding: 20px 10px 10px 10px;
 }
@@ -123,7 +123,7 @@ code, kbd, pre, samp {
 .nav-tabs > li.active > a:hover {
   color: var(--primary-light) !important;
   cursor: default;
-  background-color: var(--secondary-dark-opacity);
+  background-color: var(--secondary-dark-dark);
   border: 1px solid var(--secondary-dark);
   border-bottom-color: transparent;
 }
