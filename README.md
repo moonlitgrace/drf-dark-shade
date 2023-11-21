@@ -1,8 +1,9 @@
 # `drf-dark-shade`
 Enhance your Django Rest Framework (DRF) browsing experience with the `drf-dark-shade` package. This lightweight and easy-to-use extension bring a sleek dark theme to the DRF browsable API, reducing eye strain and providing a modern, visually appealing interface for developers.
 
-`Deep Forest Theme:`
-![Screenshot from 2023-11-20 22-24-45](https://github.com/tokitouq/drf-dark-shade/assets/114811070/e9a865e2-c581-455a-bba3-694432567910)
+###### Deep Forest Theme:
+![Screenshot from 2023-11-21 12-45-09](https://github.com/tokitouq/drf-dark-shade/assets/114811070/1e76deef-0856-4d34-9be3-e5feddf4c7e8)
+
 
 ## Installation:
 1. Install `drf-dark-shade` package using **pip** or **poetry**
@@ -22,7 +23,8 @@ INSTALLED_APPS = [
 ```bash
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
-        'drf_dark_shade.renderers.DeepForestBrowsableAPIRenderer', # deep forest theme
+        'rest_framework.renderers.JSONRenderer',
+        'drf_dark_shade.renderers.DeepForestBrowsableAPIRenderer',
     )
 }
 ```
