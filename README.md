@@ -29,7 +29,25 @@ REST_FRAMEWORK = {
     )
 }
 ```
-All set! now run app and visit your API endpoint.\
+
+## Override templates
+To override providing templates:
+1. Configure root `templates` dir in your django app
+```bash
+TEMPLATES = [
+    {
+        ...
+        # configure root templates
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'APP_DIRS': True,
+        ...
+    },
+]
+```
+2. Create template to override with name of the theme you want, like:    
+   `templates/drf_dark_shade/deep-forest.html`
+
+All set! now run app and visit your API endpoint.    
 Enjoy Dark 🌃
 
 ## Contribution
