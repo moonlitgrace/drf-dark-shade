@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -18,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party
     'rest_framework',
+    # package should be at bottom of your apps
     'drf_dark_shade',
 ]
 
@@ -28,8 +30,6 @@ REST_FRAMEWORK = {
     )
 }
 
-# rest_framework/img/grid.png
-
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware', #
     'django.contrib.auth.middleware.AuthenticationMiddleware', #
@@ -39,7 +39,8 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # configure root templates
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
