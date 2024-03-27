@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 3rd party
     'rest_framework',
+    # package should be at bottom of your apps
     'drf_dark_shade',
 ]
 
@@ -29,8 +30,6 @@ REST_FRAMEWORK = {
     )
 }
 
-# rest_framework/img/grid.png
-
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware', #
     'django.contrib.auth.middleware.AuthenticationMiddleware', #
@@ -40,6 +39,7 @@ MIDDLEWARE = [
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        # configure root templates
         'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
