@@ -13,34 +13,35 @@ pip install drf_dark_shade
 ```
 
 2. Add `drf_dark_shade` to your `INSTALLED_APPS` in your Django project's settings.
-```bash
+```python
 INSTALLED_APPS = [
-    # other packages
-    'rest_framework', # drf required
-    'drf_dark_shade',
+    # ...
+    "rest_framework", # django-rest-framework required
+    "drf_dark_shade",
 ]
 ```
 3. Add `drf_dark_shade` renderer to `REST_FRAMEWORK` config
-```bash
+```python
 REST_FRAMEWORK = {
-    'DEFAULT_RENDERER_CLASSES': (
-        'rest_framework.renderers.JSONRenderer',
-        'drf_dark_shade.renderers.DeepForestBrowsableAPIRenderer',
-    )
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+        "drf_dark_shade.renderers.DeepForestBrowsableAPIRenderer", # configure custom renderer
+    ),
+    # ...
 }
 ```
 
 ## Override templates
 To override providing templates:
 1. Configure root `templates` dir in your django app
-```bash
+```python
 TEMPLATES = [
     {
-        ...
+        # ...
         # configure root templates
-        'DIRS': [os.path.join(BASE_DIR, "templates")],
-        'APP_DIRS': True,
-        ...
+        "DIRS": [os.path.join(BASE_DIR, "templates")],
+        "APP_DIRS": True,
+        # ...
     },
 ]
 ```
@@ -48,7 +49,8 @@ TEMPLATES = [
    `templates/drf_dark_shade/deep-forest.html`
 
 All set! now run app and visit your API endpoint.    
-Enjoy Dark 🌃
+Enjoy Dark 🌃    
+More themes will be added later. PRs are welcome ❤️
 
 ## Contribution
 
