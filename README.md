@@ -1,4 +1,6 @@
-# `drf-dark-shade`
+# drf-dark-shade
+[![Downloads](https://static.pepy.tech/badge/drf-dark-shade)](https://pepy.tech/project/drf-dark-shade) [![Pypi Badge](https://img.shields.io/pypi/v/drf-dark-shade.svg)](https://pypi.org/project/drf-dark-shade/)
+
 Enhance your Django Rest Framework (DRF) browsing experience with the `drf-dark-shade` package. This lightweight and easy-to-use extension bring a sleek dark theme to the DRF browsable API, reducing eye strain and providing a modern, visually appealing interface for developers.
 
 ![Screenshot from 2023-11-21 12-45-09](https://github.com/tokitouq/drf-dark-shade/assets/114811070/c1f79290-f692-4eaf-bcbd-7b619bcc7962)
